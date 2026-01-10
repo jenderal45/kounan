@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kounan Planner | EO, WO & Travel Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #0c0c0c;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: gold;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            transition: .3s;
+        }
+
+        .nav ul li a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: gold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: gold;
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #111;
+        }
+
+        .section-title span {
+            color: gold;
+        }
+
+        /* SERVICES */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,.05);
+            text-align: center;
+            transition: .3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin: 20px 0 10px;
+            color: #111;
+        }
+
+        /* PORTFOLIO */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            border-radius: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #111;
+            color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-box h3 {
+            margin-bottom: 15px;
+            color: gold;
+        }
+
+        .contact-box input, .contact-box textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        .contact-box button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: gold;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .nav ul {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="container nav">
+        <div class="logo">Kounan Planner</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h1>Elegant Event & Travel Planner</h1>
+        <p>Kounan Planner menghadirkan layanan Event Organizer, Wedding Organizer, dan Travel Planner profesional dengan konsep eksklusif dan berkelas.</p>
+        <a href="#contact" class="btn">Konsultasi Sekarang</a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Layanan <span>Kami</span></h2>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <h3>Event Organizer</h3>
+                <p>Mengelola berbagai acara perusahaan, gathering, launching, dan event spesial dengan konsep profesional.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Wedding Organizer</h3>
+                <p>Mewujudkan pernikahan impian Anda dengan konsep elegan, sakral, dan penuh kesan.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Travel Planner</h3>
+                <p>Merancang perjalanan eksklusif, honeymoon, dan wisata premium sesuai kebutuhan Anda.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Portfolio <span>Kami</span></h2>
+        </div>
+
+        <div class="portfolio">
+            <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=800&q=80">
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hubungi <span>Kami</span></h2>
+        </div>
+
+        <div class="contact-box">
+            <div>
+                <h3>Kounan Planner</h3>
+                <p>Event Organizer, Wedding Organizer & Travel Planner profesional dengan konsep elegan dan eksklusif.</p>
+                <p>📍 Jakarta, Indonesia</p>
+                <p>📞 089652435067</p>
+                <p>✉ info@kounan.com</p>
+            </div>
+
+            <div>
+                <form>
+                    <input type="text" placeholder="Nama Anda">
+                    <input type="email" placeholder="Email">
+                    <textarea rows="5" placeholder="Pesan Anda"></textarea>
+                    <button>Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Kounan Planner. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
